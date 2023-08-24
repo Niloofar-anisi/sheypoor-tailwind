@@ -1,0 +1,19 @@
+@import url(/src/css/font.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* width */
+/* ::-webkit-scrollbar {
+    width: 6px;
+}   */
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+    background:#6698fa;
+    border-radius: 5px;
+}   */
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background:#6698fa;
+} */

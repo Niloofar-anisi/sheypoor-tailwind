@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="img/logo64.png"/>
+    <title>پیام ها</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <meta  name="description" content="نیازمندیهای رایگان خرید و فروش خودرو، املاک و آپارتمان، گوشی موبایل و تبلت، موتور سیکلت، لوازم خانگی، لوازم دست دوم، استخدام و خدمات در ایران"/>  
+  </head>
+  <body dir="rtl" x-data="{ open: false, openMenu: false }">
+    <!-- desktop mobile -->
+    <header class="lg:hidden relative">
+      <div class="bg-white w-full shadow-md p-4">
+        <p class="text-neutral-600 font-medium">پیام ها</p>
+      </div>
+    </header>
+    <!-- desktop header -->
+    <header class="bg-white container py-2 mx-auto max-w-screen-lg hidden lg:block lg:border-b">
+      <div class="flex items-center justify-between px-4 lg:px-0 gap-4 py-4">
+        <a href="index.html">
+          <img class="w-32 h-11 hidden lg:block" src="img/QE4lApai.svg" alt="لوگو شیپور" />
+        </a>
+        <div class="hidden lg:flex items-center gap-6">
+          <ul class="flex items-center text-xs text-gray-500 gap-7">
+            <li>
+              <a class="flex items-center hover:text-blue-500" href="#"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 8.933a4.856 4.856 0 01-1.473 3.493L12.07 19.74a1.477 1.477 0 01-.19.15.695.695 0 01-.38.111.727.727 0 01-.39-.112.988.988 0 01-.161-.13l-7.467-7.332A4.827 4.827 0 012 8.933c0-1.323.522-2.562 1.482-3.494 1.966-1.919 5.158-1.919 7.125 0l.893.885.902-.885c1.967-1.919 5.159-1.919 7.116 0A4.827 4.827 0 0121 8.933z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                ذخیره&zwnj;ها</a
+              >
+            </li>
+            <li>
+              <a class="flex items-center hover:text-blue-500" href="chat.html"
+                ><svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.94 20.75c-1.18 0-2.32-.25-3.39-.75l-3.66.53a.754.754 0 01-.64-.21.734.734 0 01-.21-.64l.56-3.71C2.2 15.01 2 14.01 2 13c0-2.02.79-3.94 2.23-5.39.29-.3.77-.29 1.06 0 .29.29.3.77 0 1.06A6.108 6.108 0 003.49 13c0 .87.19 1.74.57 2.57.08.17.09.36.03.54l-.42 2.8 2.89-.42c.15-.02.3 0 .44.07 1.12.56 2.37.78 3.58.66a.75.75 0 01.15 1.49c-.25.03-.52.04-.79.04z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    d="M22.01 11c0-4.27-3.57-7.75-7.95-7.75-2.15 0-4.15.82-5.63 2.29C6.94 7.01 6.12 8.94 6.12 11c0 4.27 3.56 7.75 7.94 7.75.4 0 .78-.03 1.1-.08.01 0 .03 0 .04-.01.79-.11 1.54-.33 2.25-.66l3.66.53c.24.04.47-.04.64-.21.16-.17.24-.41.21-.64l-.56-3.72c.4-.95.61-1.95.61-2.96zm-10.4.25c-.1.31-.4.53-.75.53-.44 0-.8-.35-.8-.78 0-.43.36-.78.8-.78.09 0 .17.01.25.04.32.1.55.4.55.74 0 .09-.02.17-.05.25zm2.45.53c-.44 0-.8-.35-.8-.78 0-.43.36-.78.8-.78.44 0 .8.35.8.78 0 .43-.36.78-.8.78zm3.2 0c-.44 0-.8-.35-.8-.78 0-.43.36-.78.8-.78.44 0 .8.35.8.78 0 .43-.36.78-.8.78z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                پیام&zwnj;ها
+              </a>
+            </li>
+            <li>
+              <a class="flex items-center hover:text-blue-500" href="Account.html"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.76 11.62c2.03 0 3.69-1.65 3.69-3.68 0-2.03-1.65-3.69-3.69-3.69-2.03 0-3.68 1.65-3.68 3.69s1.65 3.68 3.68 3.68zM14.64 13.05H9.37c-2.36 0-4.27 1.92-4.27 4.27V18c0 .96.79 1.75 1.75 1.75h10.31c.96 0 1.75-.79 1.75-1.75v-.67c0-2.36-1.92-4.28-4.27-4.28z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                حساب من</a
+              >
+            </li>
+          </ul>
+          <a
+            href="submit.html"
+            class="flex items-center gap-1 py-3 px-3 rounded-full bg-blue-500 hover:bg-blue-400"
+          >
+            <svg
+              class="fill-white"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.857 13.143h-5.714v5.714c0 .629-.514 1.143-1.143 1.143a1.146 1.146 0 01-1.143-1.143v-5.714H5.143A1.146 1.146 0 014 12c0-.629.514-1.143 1.143-1.143h5.714V5.143C10.857 4.514 11.371 4 12 4s1.143.514 1.143 1.143v5.714h5.714c.629 0 1.143.514 1.143 1.143s-.514 1.143-1.143 1.143z"
+              ></path>
+            </svg>
+            <span class="text-white font-semibold text-sm"
+              >ثبت آگهی رایگان</span
+            >
+          </a>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+    <!-- section -->
+
+   <section class="container mx-auto max-w-screen-lg min-h-[calc(100vh-7.75rem)] lg:min-h-[calc(100vh-22.4375rem)]">
+      <div class="lg:px-2">
+        <div class="hidden lg:block lg:px-16 mt-14">
+          <h1 class="mb-4 text-black font-semibold text-2xl tracking-tight">پیام ها</h1>
+      </div>
+        <div class="mb-4 lg:px-14  grid grid-cols-12 gap-2 lg:min-h-[calc(100vh-22.4375rem)]">
+          <div class="col-span-12 lg:col-span-4">
+            <div class="flex flex-col items-center gap-3"> 
+
+              <!-- item -->
+                <div class="w-full mb-7 bg-white rounded-md p-2 ">
+                  <div>
+                    <a class="flex gap-2 shadow-md p-2" href="#" @click.prevent="open = true">
+                            <div class="w-20 h-20">
+                                <img class="aspect-square w-full object-cover rounded-md"
+                                    src="img/ca3.jpg"
+                                    alt="ماشین">
+                            </div>
+                            <div class="flex-1 px-2 flex flex-col justify-between">
+                                <div>
+                                    <h2 class="text-black font-medium">ام وی ام 96 x22</h2>
+                                    <p class="text-xs text-gray-500 mt-2">امکان بازدید هست؟</p>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-xs text-gray-400">نیلوفر انیسی</p>
+                                    <p class="text-xs text-gray-400">8:42</p>
+                                </div>
+                            </div>
+                        </a>
+                      </div>
+                        
+                </div> 
+            </div>
+          </div>
+          <!-- LEFT PANEL -->
+              <div class="col-span-12 lg:col-span-8 lg:h-full">
+                  <div class="hidden lg:block h-full" x-show="! open">
+                      <div class="flex items-center justify-center bg-white rounded-md shadow-md h-full" >
+                          <div class="flex flex-col items-center gap-6">
+                              <img src="img/chat.png" alt="چت" class="w-24">
+                              
+                              <p class="text-gray-400 font-medium pb-5">برای شروع، یکی از چت‌ها را از لیست انتخاب کنید.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="lg:shadow-md pb-2 fixed w-screen h-screen inset-0 lg:static lg:w-auto lg:h-auto bg-white z-50" :class="{ 'hidden': ! open }"> 
+
+                      <!-- modal header -->
+                      <div class=" bg-white p-2 shadow-sm border border-gray-200 flex items-center justify-between">
+
+                          <div class="flex items-center gap-2 truncate">
+                              <a href="#" @click.prevent="open = false">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                  </svg>
+                              </a>
+
+                              <div class="flex gap-2 truncate">
+                                  <div class="h-12 w-12 lg:hidden">
+                                      <img class="rounded-full w-full aspect-square object-cover"
+                                          src="img/ca3.jpg"
+                                          alt="عکس ماشین">
+                                  </div>
+                                  <div class="flex flex-col justify-between truncate">
+                                      <h2 class="text-sm font-bold text-black truncate">ام وی ام 96 x22       
+                                      </h2>
+                                      <p class="text-xs text-gray-500">
+                                          نیلوفر انیسی
+                                      </p>
+                                  </div>
+                              </div> 
+
+                          </div>
+
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                              stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                          </svg>
+
+                      </div> 
+
+
+                      <!-- review -->
+                      <div class="my-5 mx-5 bg-white shadow-md rounded-md flex flex-col lg:flex-row lg:justify-between gap-2">
+
+                          <div
+                              class="flex items-center gap-2 justify-center py-2 px-4 text-gray-500 border-b border-gray-200">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                  stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                  <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                              </svg>
+                              <p>به این فروشنده امتیاز دهید</p>
+                          </div>
+
+                          <div class="flex items-center justify-between py-3 px-5 lg:gap-8">
+
+                              <a href="#" class="text-blue-600 font-bold hover:text-orange-400 tracking-tight">امتیازدهی به فروشنده</a>
+                              <a href="#" class="text-gray-400 font-bold hover:text-orange-400">انصراف</a>
+
+                          </div>
+
+                      </div> 
+
+                      <!-- chat list -->
+                     <div class=" mt-10 px-5 h-[500px] overflow-auto">
+                          <ul class="flex flex-col gap-2 pb-3">
+
+                              <li class="flex items-center justify-center">
+                                  <span class="bg-gray-200 text-gray-500  text-xs py-1 px-2 rounded-full">یکشنبه 29
+                                      مرداد</span>
+                              </li>
+
+                              <li
+                                  class="flex items-start gap-3 rounded-xl bg-sky-500 text-white text-[10px] py-1 px-2">
+                                  <time>08:48</time>
+                                  <span>کاربر گرامی
+                                      کد تایید یا ورود به برنامه ها و اطلاعات شخصی خود را برای هیچکس ارسال نکنید، پیام
+                                      های شیپور
+                                      در چت فقط از طریق حساب &lt;&lt;پشتیبانی شیپور&gt;&gt; به شما ارسال می گردد. در
+                                      صورت مشاهده
+                                      هرگونه تخلف، آن را گزارش کنید.
+                                  </span>
+                              </li>
+
+
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:48</time>
+                                  <span>سلام</span>
+                              </li>
+
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:49</time>
+                                  <span>قیمت چنده؟</span>
+                              </li>
+
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:49</time>
+                                  <span>ماشین سالمه؟</span>
+                              </li>
+
+                              <li
+                                  class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+
+                                  <span>سلام سالمه به شرط کارشناسی</span>
+                                  <time class="text-[10px] text-neutral-300">08:50</time>
+                              </li>
+                                                           
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:51</time>
+                                  <span>امکان بازدید هست؟</span>
+                              </li>
+
+                              <li
+                                  class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+
+                                  <span>بله</span>
+                                  <time class="text-[10px] text-neutral-300">08:53</time>
+                              </li>
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:53</time>
+                                  <span>آدرس دقیق لطف میکنید؟</span>
+                              </li>
+                              <li
+                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+
+                                <span>براتون میفرستم</span>
+                                <time class="text-[10px] text-neutral-300">08:54</time>
+                              </li>
+                              <li
+                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+
+                                <span>امروز بعد از ساعت 6 میتونید بیایید؟</span>
+                                <time class="text-[10px] text-neutral-300">08:54</time>
+                              </li>
+
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:55</time>
+                                  <span>خبر میدم بهتون</span>
+                              </li>
+                                                          
+                              <li
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                      class="w-4 h-4 fill-white">
+                                      <path
+                                          d="M18.12 6.528l-1.44-1.44-6.48 6.504 1.44 1.44 6.48-6.504zm4.344-1.44L11.64 16.008l-4.32-4.32-1.44 1.44 5.76 5.784L24 6.528l-1.536-1.44zM0 13.128l5.76 5.784 1.44-1.464-5.76-5.76L0 13.128z">
+                                      </path>
+                                  </svg>
+                                  <time class="text-[10px] text-neutral-300">08:56</time>
+                                  <span>خیلی ممنونم</span>
+                              </li>
+                              <li
+                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-4 px-4 shadow-md">
+
+                                <span>خواهش میکنم </span>
+                                <time class="text-[10px] text-neutral-300">08:57</time>
+                              </li>
+                          </ul>
+                      </div>
+
+                      <div class="mt-5 px-5 truncate shadow-sm border-t border-t-neutral-100 py-2">
+                          <ul class="flex items-center gap-2 truncate">
+                              <li>
+                                  <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">امکان بازدید هست؟</p>
+                              </li>
+                              <li>
+                                  <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">بدنه سالمه؟</p>
+                              </li>
+                              <li>
+                                  <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">تخفیف بیمه داره؟</p>
+                              </li>
+                              <li>
+                                <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">شاسی سالمه؟</p>
+                            </li>
+                            <li>
+                              <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">تخفیف بیمه داره؟</p>
+                            </li>
+                            <li>
+                              <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">معاوضه میکنید؟</p>
+                            </li>
+                            <li>
+                              <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">قسطی هم میدید؟</p>
+                            </li>
+
+                          </ul>
+                      </div>
+
+                      <div class="mt-5 px-5">
+                          <div class="flex items-center gap-2">
+                              <div class="w-10 h-10 bg-blue-500 text-white flex items-center justify-center rounded-md">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                      <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
+                                  </svg>
+
+                              </div>
+                              <input type="text" class="bg-neutral-100 border flex-1 h-10 border-gray-200 px-5 focus:outline-none focus:border-blue-400 rounded-md placeholder-gray-400" placeholder="پیامتان را درج کنید...">
+                          </div>
+                      </div>
+
+                  </div>
+
+
+              </div>
+          </div>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- footer mobile  -->
+    <footer class="lg:hidden sticky bottom-0">
+      <div class="bg-white pb-3 shadow-lg">
+        <div class="container max-w-screen-md mx-auto">
+          <nav class="flex items-center justify-evenly text-gray-400">
+            <div>
+              <a class="flex flex-col items-center gap-1" href="index.html">
+                <svg
+                class="w-6 h-6 md:w-8 md:h-8"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+               >
+                <path
+                  d="M27.076 21.958l1.868-5.142a.548.548 0 00-.328-.7l-2.054-.744a.547.547 0 00-.7.328l-.37 1.029-7.704-2.812-1.126 3.085 7.704 2.812-.372 1.028a.548.548 0 00.328.7l2.054.744c.273.11.59-.044.7-.328z"
+                  fill="#9ca3af"
+                ></path>
+                <path
+                  d="M15.416 13.523a6.458 6.458 0 00-1.846.307c-.099.033-.208.065-.306.11a6.068 6.068 0 00-1.454.765c-.218.153-.415.317-.59.46l-.01.01c-.176.164-.34.318-.482.47-.59.635-.885 1.215-1.081 1.598-.088.197-.153.34-.186.449l-.055.153a6.679 6.679 0 00-.393 2.538c.01.339.055.667.12.995v.011a6.687 6.687 0 001.279 2.768 6.61 6.61 0 002.907 2.111 6.655 6.655 0 002.534.394c.317-.01.634-.055.951-.11a6.575 6.575 0 002.808-1.28 6.62 6.62 0 002.109-2.91s.022-.054.055-.152c.033-.099.076-.252.142-.46.098-.416.24-1.061.197-1.914 0-.11-.011-.22-.022-.328-.011-.154-.033-.296-.055-.438a6.689 6.689 0 00-.765-2.177c-.054-.088-.109-.186-.164-.274a6.533 6.533 0 00-1.234-1.444 6.63 6.63 0 00-2.066-1.225l-.557 1.543-.557 1.542a3.29 3.29 0 011.956 4.212 3.275 3.275 0 01-4.196 1.958 3.29 3.29 0 01-1.956-4.212 3.285 3.285 0 014.207-1.958l.557-1.542.557-1.543a6.569 6.569 0 00-2.229-.394c-.076-.033-.131-.033-.175-.033z"
+                  fill="#9ca3af"
+                ></path>
+                <path
+                  d="M16.662 17.002l1.126-3.085-4.24-1.542-5.792-6.849a.546.546 0 00-.929.164L2.992 16.258c-.142.394.197.799.601.722l8.84-1.52 4.229 1.542z"
+                  fill="#9ca3af"
+                ></path>
+                <defs>
+                  <radialGradient
+                    id="sheypoor_icon_svg__paint0_angular_1104_80716"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="matrix(6.55742 0 0 6.57176 15.565 20.095)"
+                  >
+                    <stop offset="0.788" stop-color="#9ca3af"></stop>
+                    <stop offset="0.796" stop-color="#9ca3af"></stop>
+                  </radialGradient>
+                </defs>
+                </svg>
+                <p
+                  class="text-sm md:text-nea md:text-lg md:text-neutral-500 font-medium"
+                >
+                  آگهی&zwnj;ها
+                </p>
+              </a>             
+            </div>
+            <!--  -->
+            <div class="flex flex-col items-center gap-1">
+              <svg
+                class="w-6 h-6 md:w-8 md:h-8"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 8.933a4.856 4.856 0 01-1.473 3.493L12.07 19.74a1.477 1.477 0 01-.19.15.695.695 0 01-.38.111.727.727 0 01-.39-.112.988.988 0 01-.161-.13l-7.467-7.332A4.827 4.827 0 012 8.933c0-1.323.522-2.562 1.482-3.494 1.966-1.919 5.158-1.919 7.125 0l.893.885.902-.885c1.967-1.919 5.159-1.919 7.116 0A4.827 4.827 0 0121 8.933z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <p
+                class="text-sm md:text-nea md:text-lg md:text-neutral-500 font-medium"
+              >
+                ذخیره&zwnj;ها
+              </p>
+            </div>
+            <!--  -->
+            <div>
+              <a class="flex flex-col items-center gap-1" href="submit.html">
+                <svg
+                class="w-8 h-8"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="2"
+                  y="2"
+                  width="28"
+                  height="28"
+                  rx="14"
+                  fill="#3e7bfa"
+                ></rect>
+                <g clip-path="url(#post_listing_svg__clip0_873_4708)">
+                  <path
+                    d="M22 17h-5v5c0 .55-.45 1-1 1s-1-.45-1-1v-5h-5c-.55 0-1-.45-1-1s.45-1 1-1h5v-5c0-.55.45-1 1-1s1 .45 1 1v5h5c.55 0 1 .45 1 1s-.45 1-1 1z"
+                    fill="#fff"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="post_listing_svg__clip0_873_4708">
+                    <path
+                      fill="#0060FF"
+                      transform="translate(4 4)"
+                      d="M0 0h24v24H0z"
+                    ></path>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p
+                class="text-sm md:text-nea md:text-lg md:text-neutral-500 font-medium"
+              >
+                ثبت آگهی
+              </p>
+              </a>
+             
+            </div>
+            <!--  -->
+            <div>
+              <a class="flex flex-col items-center gap-1" href="chat.html">
+                <svg
+                class="w-6 h-6 md:w-8 md:h-8"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.94 20.75c-1.18 0-2.32-.25-3.39-.75l-3.66.53a.754.754 0 01-.64-.21.734.734 0 01-.21-.64l.56-3.71C2.2 15.01 2 14.01 2 13c0-2.02.79-3.94 2.23-5.39.29-.3.77-.29 1.06 0 .29.29.3.77 0 1.06A6.108 6.108 0 003.49 13c0 .87.19 1.74.57 2.57.08.17.09.36.03.54l-.42 2.8 2.89-.42c.15-.02.3 0 .44.07 1.12.56 2.37.78 3.58.66a.75.75 0 01.15 1.49c-.25.03-.52.04-.79.04z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  d="M22.01 11c0-4.27-3.57-7.75-7.95-7.75-2.15 0-4.15.82-5.63 2.29C6.94 7.01 6.12 8.94 6.12 11c0 4.27 3.56 7.75 7.94 7.75.4 0 .78-.03 1.1-.08.01 0 .03 0 .04-.01.79-.11 1.54-.33 2.25-.66l3.66.53c.24.04.47-.04.64-.21.16-.17.24-.41.21-.64l-.56-3.72c.4-.95.61-1.95.61-2.96zm-10.4.25c-.1.31-.4.53-.75.53-.44 0-.8-.35-.8-.78 0-.43.36-.78.8-.78.09 0 .17.01.25.04.32.1.55.4.55.74 0 .09-.02.17-.05.25zm2.45.53c-.44 0-.8-.35-.8-.78 0-.43.36-.78.8-.78.44 0 .8.35.8.78 0 .43-.36.78-.8.78zm3.2 0c-.44 0-.8-.35-.8-.78 0-.43.36-.78.8-.78.44 0 .8.35.8.78 0 .43-.36.78-.8.78z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <p
+                class="text-sm md:text-nea md:text-lg md:text-neutral-500 font-medium"
+              >
+                پیام&zwnj;ها
+              </p>
+              </a>
+            
+            </div>
+            <!--  -->
+            <div>
+              <a class="flex flex-col items-center gap-1" href="Account.html">
+                <svg
+                class="w-6 h-6 md:w-8 md:h-8"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.76 11.62c2.03 0 3.69-1.65 3.69-3.68 0-2.03-1.65-3.69-3.69-3.69-2.03 0-3.68 1.65-3.68 3.69s1.65 3.68 3.68 3.68zM14.64 13.05H9.37c-2.36 0-4.27 1.92-4.27 4.27V18c0 .96.79 1.75 1.75 1.75h10.31c.96 0 1.75-.79 1.75-1.75v-.67c0-2.36-1.92-4.28-4.27-4.28z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <p class="text-sm md:text-neutral-500 md:text-lg font-medium">
+                حساب من
+              </p>
+              </a>
+            
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <!-- footer desktop  -->
+    <footer class="hidden lg:block">
+      <div class="bg-gray-50">
+        <div class="container max-w-screen-lg mx-auto px-5 py-4">
+          <div class="flex items-center gap-12">
+            <ul class="text-gray-600 text-sm flex flex-col gap-3">
+              <li class="text-black font-medium">
+                <a href="#">شیپور</a>
+              </li>
+              <li><a href="#">درباره شیپور</a></li>
+              <li><a href="#">بلاگ</a></li>
+              <li><a href="#">نقشه سایت</a></li>
+              <li><a href="#">فرصت های شغلی</a></li>
+            </ul>
+            <!--  -->
+            <ul class="text-gray-600 text-sm flex flex-col gap-3">
+              <li class="text-black font-medium">
+                <a href="#">راهنمای مشتریان</a>
+              </li>
+              <li><a href="#">سوالات متداول</a></li>
+              <li><a href="#">تماس با پشتیبانی</a></li>
+              <li><a href="#">راهنما و پشتیبانی</a></li>
+              <li><a href="#">قوانین و مقررات</a></li>
+            </ul>
+            <!--  -->
+            <ul class="text-gray-600 text-sm flex flex-col gap-3">
+              <li class="text-black font-medium">
+                <a href="#">خدمات</a>
+              </li>
+              <li><a href="#">همه فروشگاه‌ها</a></li>
+              <li><a href="#">همه مشاوران</a></li>
+              <li><a href="#">دانلود آلونک</a></li>
+              <li><a href="#">دانلود آلونک</a></li>
+            </ul>
+
+            <div class="flex items-center flex-1 justify-end gap-2">
+              <img class="w-auto h-auto" src="img/1MDy1-uz.png" alt="enamad" />
+              <img class="w-auto h-auto" src="img/samandehi.png" alt="samandehi" />
+              <img class="w-auto h-auto" src="img/ecunion.png" alt="ecunion" />
+            </div>
+
+            <ul class="flex flex-col gap-2">
+              <li class="bg-white shadow-sm rounded-md py-1 px-2 border">
+                <a href="#"
+                  ><div class="flex items-center">
+                    <div class="flex items-center gap-3">
+                      <div>
+                        <p class="text-xs text-neutral-500">اپلیکیشن اندروید</p>
+                        <p class="text-ms font-semibold">دانلود مستقیم</p>
+                      </div>
+                      <svg
+                        class="fill-blue-500"
+                        width="32"
+                        height="32"
+                        fill="#0084ff"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g
+                          clip-path="url(#Direct_Download_svg__clip0_1925_180482)"
+                        >
+                          <path
+                            d="M25.333 12h-5.334V4h-8v8H6.666l9.333 9.333L25.333 12zM6.666 24v2.667h18.667V24H6.666z"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="Direct_Download_svg__clip0_1925_180482">
+                            <path d="M0 0h32v32H0z"></path>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="bg-white shadow-sm rounded-md py-1 px-2 border">
+                <a href="#"
+                  ><div class="flex items-center">
+                    <div class="flex items-center gap-10">
+                      <div>
+                        <p class="text-xs text-neutral-500">اپلیکیشن iOS</p>
+                        <p class="text-ms font-semibold">سیب اپ</p>
+                      </div>
+                      <img src="img/35eEw08d.png" alt="لوگو" />
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="bg-white shadow-sm rounded-md py-1 px-2 border">
+                <a href="#"
+                  ><div class="flex items-center">
+                    <div class="flex items-center gap-6 py-2">
+                      <div>
+                        <p class="text-ms font-semibold">همه مارکت‌ها</p>
+                      </div>
+                      <svg
+                        class="rotate-180"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 7l5 5-5 5"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-100">
+        <div class="container max-w-screen-lg mx-auto px-5 py-5">
+          <div class="flex justify-between">
+            <p class="text-sm text-gray-600">
+              کليه حقوق اين سایت متعلق به
+              <span class="font-semibold">نیلوفر انیسی</span> است.
+            </p>
+            <div>
+              <ul class="flex justify-between items-center gap-8">
+                <li>
+                  <a href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#linkedin-icon_svg__clip0_859_4361)">
+                        <path
+                          d="M20.5 19.2c0 .713-.589 1.3-1.311 1.3H4.812A1.31 1.31 0 013.5 19.2V4.8c0-.713.589-1.3 1.312-1.3h14.377c.73 0 1.311.585 1.311 1.3v14.4z"
+                          stroke="#555770"
+                        ></path>
+                        <path
+                          d="M8.853 7.397c0 .662-.493 1.2-1.31 1.2-.764 0-1.256-.538-1.256-1.2 0-.673.513-1.19 1.299-1.19.774 0 1.256.517 1.267 1.19zM6.35 17.245V9.538h2.419v7.697h-2.42v.01zM10.225 11.999c0-.962-.031-1.759-.063-2.452h2.105l.115 1.066h.042c.314-.507 1.1-1.242 2.408-1.242 1.592 0 2.786 1.055 2.786 3.32v4.553h-2.42V12.97c0-.993-.345-1.665-1.224-1.665-.67 0-1.068.455-1.246.9-.063.155-.084.382-.084.6v4.438h-2.42v-5.245z"
+                          fill="#555770"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="linkedin-icon_svg__clip0_859_4361">
+                          <path
+                            fill="#555770"
+                            transform="translate(3 3)"
+                            d="M0 0h18v18H0z"
+                          ></path>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      class="fill-slate-600"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.033 3H7.967A4.973 4.973 0 003 7.967v8.066A4.973 4.973 0 007.967 21h8.066A4.973 4.973 0 0021 16.033V7.967A4.973 4.973 0 0016.033 3zm3.37 13.033a3.374 3.374 0 01-3.37 3.37H7.967a3.374 3.374 0 01-3.37-3.37V7.967a3.374 3.374 0 013.37-3.37h8.066a3.374 3.374 0 013.37 3.37v8.066zM7.362 12A4.643 4.643 0 0112 7.362 4.643 4.643 0 0116.638 12 4.643 4.643 0 0112 16.638 4.643 4.643 0 017.362 12zM12 15.041a3.044 3.044 0 01-3.041-3.04A3.045 3.045 0 0112 8.958 3.045 3.045 0 0115.041 12 3.044 3.044 0 0112 15.041zm4.005-8.69c.218-.219.52-.343.828-.343.308 0 .61.124.828.343a1.176 1.176 0 010 1.656c-.218.218-.52.343-.828.343a1.18 1.18 0 01-.828-.343 1.18 1.18 0 01-.343-.828c0-.309.125-.611.343-.828z"
+                      ></path>
+                      <mask
+                        id="instagram-icon_svg__a"
+                        maskUnits="userSpaceOnUse"
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        style="mask-type: luminance"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16.033 3H7.967A4.973 4.973 0 003 7.967v8.066A4.973 4.973 0 007.967 21h8.066A4.973 4.973 0 0021 16.033V7.967A4.973 4.973 0 0016.033 3zm3.37 13.033a3.374 3.374 0 01-3.37 3.37H7.967a3.374 3.374 0 01-3.37-3.37V7.967a3.374 3.374 0 013.37-3.37h8.066a3.374 3.374 0 013.37 3.37v8.066zM7.362 12A4.643 4.643 0 0112 7.362 4.643 4.643 0 0116.638 12 4.643 4.643 0 0112 16.638 4.643 4.643 0 017.362 12zM12 15.041a3.044 3.044 0 01-3.041-3.04A3.045 3.045 0 0112 8.958 3.045 3.045 0 0115.041 12 3.044 3.044 0 0112 15.041zm4.005-8.69c.218-.219.52-.343.828-.343.308 0 .61.124.828.343a1.176 1.176 0 010 1.656c-.218.218-.52.343-.828.343a1.18 1.18 0 01-.828-.343 1.18 1.18 0 01-.343-.828c0-.309.125-.611.343-.828z"
+                        ></path>
+                      </mask>
+                      <g mask="url(#instagram-icon_svg__a)">
+                        <path d="M0 0h24v24H0z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <svg
+                      class="fill-slate-600"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 6.73a7.374 7.374 0 01-2.12.581 3.708 3.708 0 001.623-2.041 7.444 7.444 0 01-2.346.896 3.693 3.693 0 00-6.292 3.367 10.483 10.483 0 01-7.61-3.858 3.665 3.665 0 00-.5 1.856 3.69 3.69 0 001.642 3.073 3.692 3.692 0 01-1.673-.464v.046a3.696 3.696 0 002.962 3.621c-.31.083-.636.13-.973.13-.238 0-.47-.024-.695-.07a3.695 3.695 0 003.448 2.565 7.409 7.409 0 01-4.585 1.579c-.298 0-.592-.018-.881-.051a10.437 10.437 0 005.66 1.661c6.793 0 10.506-5.626 10.506-10.505l-.013-.478A7.373 7.373 0 0021 6.73z"
+                      ></path>
+                      <mask
+                        id="twitter-icon_svg__a"
+                        maskUnits="userSpaceOnUse"
+                        x="3"
+                        y="5"
+                        width="18"
+                        height="15"
+                        style="mask-type: luminance"
+                      >
+                        <path
+                          d="M21 6.73a7.374 7.374 0 01-2.12.581 3.708 3.708 0 001.623-2.041 7.444 7.444 0 01-2.346.896 3.693 3.693 0 00-6.292 3.367 10.483 10.483 0 01-7.61-3.858 3.665 3.665 0 00-.5 1.856 3.69 3.69 0 001.642 3.073 3.692 3.692 0 01-1.673-.464v.046a3.696 3.696 0 002.962 3.621c-.31.083-.636.13-.973.13-.238 0-.47-.024-.695-.07a3.695 3.695 0 003.448 2.565 7.409 7.409 0 01-4.585 1.579c-.298 0-.592-.018-.881-.051a10.437 10.437 0 005.66 1.661c6.793 0 10.506-5.626 10.506-10.505l-.013-.478A7.373 7.373 0 0021 6.73z"
+                        ></path>
+                      </mask>
+                      <g mask="url(#twitter-icon_svg__a)">
+                        <path d="M0 0h24v24H0z"></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
