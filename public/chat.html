@@ -100,23 +100,15 @@
         </div>
       </div>
     </header>
-
-
-
-
-
-
     <!-- section -->
-
    <section class="container mx-auto max-w-screen-lg min-h-[calc(100vh-7.75rem)] lg:min-h-[calc(100vh-22.4375rem)]">
       <div class="lg:px-2">
         <div class="hidden lg:block lg:px-16 mt-14">
           <h1 class="mb-4 text-black font-semibold text-2xl tracking-tight">پیام ها</h1>
-      </div>
+        </div>
         <div class="mb-4 lg:px-14  grid grid-cols-12 gap-2 lg:min-h-[calc(100vh-22.4375rem)]">
           <div class="col-span-12 lg:col-span-4">
             <div class="flex flex-col items-center gap-3"> 
-
               <!-- item -->
                 <div class="w-full mb-7 bg-white rounded-md p-2 ">
                   <div>
@@ -143,7 +135,7 @@
             </div>
           </div>
           <!-- LEFT PANEL -->
-              <div class="col-span-12 lg:col-span-8 lg:h-full">
+            <div class="col-span-12 lg:col-span-8 lg:h-full">
                   <div class="hidden lg:block h-full" x-show="! open">
                       <div class="flex items-center justify-center bg-white rounded-md shadow-md h-full" >
                           <div class="flex flex-col items-center gap-6">
@@ -153,9 +145,7 @@
                           </div>
                       </div>
                   </div>
-
                   <div class="lg:shadow-md pb-2 fixed w-screen h-screen inset-0 lg:static lg:w-auto lg:h-auto bg-white z-50" :class="{ 'hidden': ! open }"> 
-
                       <!-- modal header -->
                       <div class=" bg-white p-2 shadow-sm border border-gray-200 flex items-center justify-between">
 
@@ -167,9 +157,8 @@
                                           d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                                   </svg>
                               </a>
-
                               <div class="flex gap-2 truncate">
-                                  <div class="h-12 w-12 lg:hidden">
+                                  <div class="h-10 w-10 lg:hidden">
                                       <img class="rounded-full w-full aspect-square object-cover"
                                           src="img/ca3.jpg"
                                           alt="عکس ماشین">
@@ -182,23 +171,17 @@
                                       </p>
                                   </div>
                               </div> 
-
                           </div>
-
                           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                               stroke="currentColor" class="w-6 h-6">
                               <path stroke-linecap="round" stroke-linejoin="round"
                                   d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
                           </svg>
-
                       </div> 
-
-
                       <!-- review -->
-                      <div class="my-5 mx-5 bg-white shadow-md rounded-md flex flex-col lg:flex-row lg:justify-between gap-2">
-
+                      <div class="my-1 lg:my-5 mx-5 bg-white shadow-md rounded-md  lg:flex-row lg:justify-between gap-2">
                           <div
-                              class="flex items-center gap-2 justify-center py-2 px-4 text-gray-500 border-b border-gray-200">
+                              class="hidden lg:flex items-center gap-2 justify-center py-2 px-4 text-gray-500 border-b border-gray-200">
                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                   stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                   <path stroke-linecap="round" stroke-linejoin="round"
@@ -206,27 +189,21 @@
                               </svg>
                               <p>به این فروشنده امتیاز دهید</p>
                           </div>
-
-                          <div class="flex items-center justify-between py-3 px-5 lg:gap-8">
+                          <div class="hidden lg:flex items-center justify-between py-3 px-5 lg:gap-8">
 
                               <a href="#" class="text-blue-600 font-bold hover:text-orange-400 tracking-tight">امتیازدهی به فروشنده</a>
                               <a href="#" class="text-gray-400 font-bold hover:text-orange-400">انصراف</a>
-
                           </div>
-
                       </div> 
-
                       <!-- chat list -->
-                     <div class=" mt-10 px-5 h-[500px] overflow-auto">
+                     <div class=" mt-2 px-5 h-[500px] overflow-auto min-h-[calc(100vh-9.1875rem)] lg:h-auto">
                           <ul class="flex flex-col gap-2 pb-3">
-
                               <li class="flex items-center justify-center">
                                   <span class="bg-gray-200 text-gray-500  text-xs py-1 px-2 rounded-full">یکشنبه 29
                                       مرداد</span>
                               </li>
-
                               <li
-                                  class="flex items-start gap-3 rounded-xl bg-sky-500 text-white text-[10px] py-1 px-2">
+                                  class="flex items-start gap-3 text-center rounded-xl bg-sky-500 text-white text-[10px] py-1 lg:py-2 px-2">
                                   <time>08:48</time>
                                   <span>کاربر گرامی
                                       کد تایید یا ورود به برنامه ها و اطلاعات شخصی خود را برای هیچکس ارسال نکنید، پیام
@@ -236,10 +213,8 @@
                                       هرگونه تخلف، آن را گزارش کنید.
                                   </span>
                               </li>
-
-
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 lg:py-2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -249,9 +224,8 @@
                                   <time class="text-[10px] text-neutral-300">08:48</time>
                                   <span>سلام</span>
                               </li>
-
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 lg:py-2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -261,9 +235,8 @@
                                   <time class="text-[10px] text-neutral-300">08:49</time>
                                   <span>قیمت چنده؟</span>
                               </li>
-
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 lg:py-2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -273,16 +246,14 @@
                                   <time class="text-[10px] text-neutral-300">08:49</time>
                                   <span>ماشین سالمه؟</span>
                               </li>
-
                               <li
-                                  class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+                                  class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-1 lg:py-2 px-4 shadow-md">
 
                                   <span>سلام سالمه به شرط کارشناسی</span>
                                   <time class="text-[10px] text-neutral-300">08:50</time>
-                              </li>
-                                                           
+                              </li>                                                          
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 lg:py-2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -292,15 +263,14 @@
                                   <time class="text-[10px] text-neutral-300">08:51</time>
                                   <span>امکان بازدید هست؟</span>
                               </li>
-
                               <li
-                                  class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+                                  class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-1 lg:py-2 px-4 shadow-md">
 
                                   <span>بله</span>
                                   <time class="text-[10px] text-neutral-300">08:53</time>
                               </li>
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 lg:py-2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -311,20 +281,19 @@
                                   <span>آدرس دقیق لطف میکنید؟</span>
                               </li>
                               <li
-                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-1 lg:py-2 px-4 shadow-md">
 
                                 <span>براتون میفرستم</span>
                                 <time class="text-[10px] text-neutral-300">08:54</time>
                               </li>
                               <li
-                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 px-4 shadow-md">
+                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-1 lg:py-2 px-4 shadow-md">
 
                                 <span>امروز بعد از ساعت 6 میتونید بیایید؟</span>
                                 <time class="text-[10px] text-neutral-300">08:54</time>
                               </li>
-
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 lg:py-2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -333,10 +302,9 @@
                                   </svg>
                                   <time class="text-[10px] text-neutral-300">08:55</time>
                                   <span>خبر میدم بهتون</span>
-                              </li>
-                                                          
+                              </li>                                                         
                               <li
-                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-2 px-4">
+                                  class="self-start flex items-center gap-2 rounded-full rounded-tr-none bg-zinc-500 text-white py-1 py:2 px-4">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                       class="w-4 h-4 fill-white">
                                       <path
@@ -347,15 +315,13 @@
                                   <span>خیلی ممنونم</span>
                               </li>
                               <li
-                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-4 px-4 shadow-md">
-
+                              class="self-end flex items-center gap-2 rounded-full rounded-tl-none bg-white text-gray-700 py-2 lg:py4 px-4 shadow-md">
                                 <span>خواهش میکنم </span>
                                 <time class="text-[10px] text-neutral-300">08:57</time>
                               </li>
                           </ul>
                       </div>
-
-                      <div class="mt-5 px-5 truncate shadow-sm border-t border-t-neutral-100 py-2">
+                      <div class="mt-1 px-5 truncate shadow-sm border-t border-t-neutral-100 py-2">
                           <ul class="flex items-center gap-2 truncate">
                               <li>
                                   <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">امکان بازدید هست؟</p>
@@ -378,11 +344,9 @@
                             <li>
                               <p class="bg-neutral-200 text-gray-500  text-xs py-2 px-2 rounded-full truncate">قسطی هم میدید؟</p>
                             </li>
-
                           </ul>
                       </div>
-
-                      <div class="mt-5 px-5">
+                      <div class="mt-10 lg:mt-3 px-5">
                           <div class="flex items-center gap-2">
                               <div class="w-10 h-10 bg-blue-500 text-white flex items-center justify-center rounded-md">
                                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -390,28 +354,15 @@
                                       <path stroke-linecap="round" stroke-linejoin="round"
                                           d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3 3 0 1119.5 7.372L8.552 18.32m.009-.01l-.01.01m5.699-9.941l-7.81 7.81a1.5 1.5 0 002.112 2.13" />
                                   </svg>
-
                               </div>
                               <input type="text" class="bg-neutral-100 border flex-1 h-10 border-gray-200 px-5 focus:outline-none focus:border-blue-400 rounded-md placeholder-gray-400" placeholder="پیامتان را درج کنید...">
                           </div>
                       </div>
-
                   </div>
-
-
-              </div>
-          </div>
-
+            </div>
+        </div>
       </div>
     </section>
-
-
-
-
-
-
-
-
     <!-- footer mobile  -->
     <footer class="lg:hidden sticky bottom-0">
       <div class="bg-white pb-3 shadow-lg">
