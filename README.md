@@ -13,8 +13,6 @@ interior decoration design Website
 ![img-1](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/4bfa64e9-101c-4c5f-b069-f9f7cd32d063)
 ![img-2](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/a4b4ae3f-971c-454f-b003-134143906830)
 ![img-3](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/97967dbd-0ee8-475a-a7f1-5b4fcde26e15)
-![img-4](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/b4041125-a8ff-4483-97d9-625182d796d9)
-![img-5](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/1de5839c-51e4-40d4-a879-141a45efbeb8)
 ![img-6](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/125af89e-e236-4ef5-a8d2-d8031eb5f86d)
 ![img-7](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/14384e34-a6e0-4624-98d3-8ae3de667ad6)
 ![img-8](https://github.com/Niloofar-anisi/sheypoor-tailwind/assets/136443219/0b564029-ae41-400e-a5b7-2bdd693365b5)
